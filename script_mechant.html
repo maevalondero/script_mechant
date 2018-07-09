@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Script mechant en JavaScript</title>
+</head>
+
+<body>
+
+
+  </script>
+<!--Affichage de la video -->
+  <video autoplay></video>
+
+
+  <!-- CSS -->
+  <style>
+  #my_camera{
+   width: 320px;
+   height: 240px;
+   border: 1px solid black;
+  }
+  </style>
+
+  <div id="my_camera"></div>
+  <input type=button value="Prendre photo" onClick="take_snapshot()">
+
+  <div id="results" ></div>
+  <script type="text/javascript" src="../webcamjs/webcam.min.js"></script>
+
+  <!-- Configuration de la camera  -->
+  <script language="JavaScript">
+   Webcam.set({
+    width: 320,
+    height: 240,
+    image_format: 'jpeg',
+   });
+   Webcam.attach( '#my_camera' );
+
+  <!-- enregistrer la photo -->
+  function take_snapshot() {
+
+    } );
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+  <script>
+  const constraints = {
+    video: true
+  };
+
+  const video = document.querySelector('video');
+
+  function handleSuccess(stream) {
+    video.srcObject = stream;
+  }
+
+  function handleError(error) {
+    console.error('Reeeejected!', error);
+  }
+
+  navigator.mediaDevices.getUserMedia(constraints).
+    then(handleSuccess).catch(handleError);
+  </script>
+  </script>
+-->
+
+    <!-- <video autoplay></video>
+
+  <script>
+  const constraints = {
+  video: true
+  };
+
+  const video = document.querySelector('video');
+
+  function handleSuccess(stream) {
+    video.srcObject = stream;
+  }
+
+  navigator.mediaDevices.getUserMedia(constraints).
+    then(handleSuccess).catch(handleError);
+  </script> -->
+	</body>
+
+</html>
